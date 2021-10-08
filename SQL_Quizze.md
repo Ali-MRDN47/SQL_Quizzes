@@ -1,15 +1,14 @@
-# Scenario
-The database runs on the server PFSQL01, so you need to connect the server.
+# Szenario
 Du bist beauftragt, einem Datanbenkentwickler dabei zu helfen, Abfragen zu erstellen und seine parat erstellten Abfragen auf Richtigkeit zu prüfen
-
-# Requirenments
+Die Datenbank läuft auf dem server PFSQL01, also brauchst du dich mit dem zu verbinden..
+# Voraussetzungen
 -   Du bist innerhalb unseres LAN-Segments oder via VPN verbunden
 -   Du hast Microsoft SQL Server Management Studio installiert
 
 # Start
 Verbinde dich mit dem PFSQL01 Server, wähle die datenbank Quiz_Database aus und eine neue Query Session. Diese Datenbank gehört einer Großhandelfirma und besteht aus 6 tabellen (Mitarbeiter, Kunde, Eindeut_plz, Artikel, Artikelgruppen, Auftragsposition)
 
-# Tasks
+# Aufgaben
 ## Stufe 1:
 1. Zeige alle Informationen der Tabelle Mitarbeiter. Wie viele Mitarbieter beschäftigt die Firma?
 2.  Sortiere die Kundendaten nach der Postleitzahl aufsteigend. Bei der gleichen Postleitzahl werden die Datensätze nach Kundenamen absteigend sortiert.
