@@ -5,4 +5,4 @@ Um die Quizze lösen zu können, muss auf die relevante Datenbank zugegriffen we
 
 Die Quizze können im Moment nur von internen Mitarbeiter gemacht werden, weil die Datenbank auf einem lokalen Server liegt.
 
-Ich werde demnächst die Datenbank als ausführbares Skript hochladen, damit jeder die Daten bei sich importieren kann.
+Ich werde demnächst die Datenbank als ausführbares SQL Skript hochladen, damit jeder die Daten bei sich importieren kann.
