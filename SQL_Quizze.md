@@ -30,43 +30,49 @@ FROM Mitarbeiter
 1. Wie groß ist das Minimal- bzw. Maximalgehalt in der Firma?
 2. Mit welcher der folgenden Skripte können Aufträge, die im Jahr 1999 aufgenommen wurden abgefragt?
 
-    - SELECT count(*) AS [Aufträge Anzahl]
-    FROM Auftrag
-    HAVING YEAR(Auftragsdatum) = 1999;
-    - SELECT count(Auftragsnummer) AS [Aufträge Anzahl]
-    FROM Auftrag
-    HAVING YEAR(Auftragsdatum) = 1999;
-    - SELECT count(*) AS [Aufträge Anzahl]
-    FROM Auftrag
-    WHERE YEAR(Auftragsdatum) = 1999;
-    - SELECT count(Auftragsdatum)
-    FROM Auftrag
-    WHERE YEAR(Auftragsdatum) = 1999;
+- SELECT count(*) AS [Aufträge Anzahl]
+FROM Auftrag
+HAVING YEAR(Auftragsdatum) = 1999;
+- SELECT count(Auftragsnummer) AS [Aufträge Anzahl]
+FROM Auftrag
+HAVING YEAR(Auftragsdatum) = 1999;
+- SELECT count(*) AS [Aufträge Anzahl]
+FROM Auftrag
+WHERE YEAR(Auftragsdatum) = 1999;
+- SELECT count(Auftragsdatum)
+FROM Auftrag
+WHERE YEAR(Auftragsdatum) = 1999;
+
 3. Eine der folgenden Abfragen liefert folgendes Ergebnis zurück:
+
 ![stg2_Auf3.png](./src/stg2_Auf3.png)
-    - SELECT Abteilung, avg(Gehalt) "durchschnt. Gehalt" FROM MITARBEITER;
-    - SELECT Abteilung, avg(Gehalt) "durchschnt. Gehalt" FROM MITARBEITER
-    GROUP BY Gehalt;
-    - SELECT Abteilung, avg(Gehalt) durchschnt. Gehalt FROM MITARBEITER
-    GROUP BY Abteilung;
-    - SELECT Abteilung, avg(Gehalt) "durchschnt. Gehalt" FROM MITARBEITER
-    GROUP BY Abteilung;
+- SELECT Abteilung, avg(Gehalt) "durchschnt. Gehalt" FROM MITARBEITER;
+- SELECT Abteilung, avg(Gehalt) "durchschnt. Gehalt" FROM MITARBEITER
+GROUP BY Gehalt;
+- SELECT Abteilung, avg(Gehalt) durchschnt. Gehalt FROM MITARBEITER
+GROUP BY Abteilung;
+- SELECT Abteilung, avg(Gehalt) "durchschnt. Gehalt" FROM MITARBEITER
+GROUP BY Abteilung;
 4. Welche Steurklassen kommen in der Mitarbeiter Tabelle mehr als 4 Mal vor?
 ## Stufe 3:
 1. Welche Artikel gehören zur Artikelgruppe mit der Bezeichnung „Peripherie“?
+
 2. Mit welcher der Abfragen bekommst du das abgebildete Ergebnis?
+
 ![stg3_Auf2.png](./src/stg3_Auf2.png)
-    - SELECT m.Vorname, m.Name, ep.Ort FROM MITARBEITER m
-    RIGHT JOIN EINDEUT_PLZ ep ON ep.PLZ = m.Plz
-    - SELECT m.Vorname, m.Name, ep.Ort FROM MITARBEITER m
-    JOIN EINDEUT_PLZ ep ON ep.PLZ = m.Plz
-    - SELECT m.Vorname, m.Name, ep.Ort FROM EINDEUT_PLZ ep
-    LEFT JOIN MITARBEITER m ON ep.PLZ = m.Plz
-    - SELECT m.Vorname, m.Name, ep.Ort FROM EINDEUT_PLZ ep
-    RIGHT JOIN MITARBEITER m ON ep.PLZ = m.Plz
-3. In Welchen Orten Wohnen sowohl Kunde als auch Mitarbeiter?
+- SELECT m.Vorname, m.Name, ep.Ort FROM MITARBEITER m
+RIGHT JOIN EINDEUT_PLZ ep ON ep.PLZ = m.Plz
+- SELECT m.Vorname, m.Name, ep.Ort FROM MITARBEITER m
+JOIN EINDEUT_PLZ ep ON ep.PLZ = m.Plz
+- SELECT m.Vorname, m.Name, ep.Ort FROM EINDEUT_PLZ ep
+LEFT JOIN MITARBEITER m ON ep.PLZ = m.Plz
+- SELECT m.Vorname, m.Name, ep.Ort FROM EINDEUT_PLZ ep
+RIGHT JOIN MITARBEITER m ON ep.PLZ = m.Plz
+3. In Welchen Orten Wohnen sowohl Kunde als auch Mitarbeiter (Nur die Orte müssen angezeigt werden)?
 4. Folgende Abbildung zeigt Kunden an, die noch nicht etwas bestellt haben.
+
 ![stg3_Auf4.png](./src/stg3_Auf4.png)
+
 Wie lautet die Abfrage für diese Tabelle?
 
 # Autor
