@@ -17,15 +17,15 @@ So soll das Ergebnis aussehen:
 ![Auf_2.png](./src/stg1_Auf_2.png)
 3. Welcher Mitarbeiter der Steuerklasse III verdient mehr als 6000 €
 4. Welche der folgenden Abfragen liefert folgenden Tabelle aus:
-![Auf_4.png](./src/stg1_Auf_4.png)
 
-    - SELECT Name, Vorname, Vorname + '.' + Name + '@großhandel.de' as E-Mail
-    FROM Mitarbeiter
-    - SELECT Name, Vorname, Vorname + '.' + Name + '@großhandel.de' as "E-Mail"
-    FROM Mitarbeiter
-    - SELECT Name, Vorname, Vorname + . + Name + @großhandel.de as E-Mail
-    FROM Mitarbeiter
-    - Keine
+![Auf_4.png](./src/stg1_Auf_4.png)
+- SELECT Name, Vorname, Vorname + '.' + Name + '@großhandel.de' as E-Mail
+FROM Mitarbeiter
+- SELECT Name, Vorname, Vorname + '.' + Name + '@großhandel.de' as "E-Mail"
+FROM Mitarbeiter
+- SELECT Name, Vorname, Vorname + . + Name + @großhandel.de as E-Mail
+FROM Mitarbeiter
+- Keine
 ## Stufe 2:
 1. Wie groß ist das Minimal- bzw. Maximalgehalt in der Firma?
 2. Mit welcher der folgenden Skripte können Aufträge, die im Jahr 1999 aufgenommen wurden abgefragt?
