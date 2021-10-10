@@ -1,12 +1,13 @@
 # Szenario
-Du bist beauftragt, einem Datanbenkentwickler dabei zu helfen, Abfragen zu erstellen und seine parat erstellten Abfragen auf Richtigkeit zu prüfen
+Du bist beauftragt, einem Datanbenkentwickler dabei zu helfen, Abfragen zu erstellen und seine parat erstellten Abfragen auf Richtigkeit zu prüfen.
+
 Die Datenbank läuft auf dem server PFSQL01, also brauchst du dich mit dem zu verbinden..
 # Voraussetzungen
 -   Du bist innerhalb unseres LAN-Segments oder via VPN verbunden
 -   Du hast Microsoft SQL Server Management Studio installiert
 
 # Start
-Verbinde dich mit dem PFSQL01 Server, wähle die datenbank Quiz_Database aus und eine neue Query Session. Diese Datenbank gehört einer Großhandelfirma und besteht aus 6 tabellen (Mitarbeiter, Kunde, Eindeut_plz, Artikel, Artikelgruppen, Auftragsposition)
+Verbinde dich mit dem PFSQL01 Server, wähle die datenbank Quiz_Database aus und starte eine neue Query Session. Diese Datenbank gehört einer Großhandelfirma und besteht aus 6 tabellen (Mitarbeiter, Kunde, Eindeut_plz, Artikel, Artikelgruppen, Auftragsposition)
 
 # Aufgaben
 ## Stufe 1:
